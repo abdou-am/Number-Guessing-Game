@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scenario 2</title>
+</head>
+<body>
+    <div class="upper-part">
+        <p class = "header">think of a number between 1 and 100 and i will try to find it</p>
+        <p id = "PcResponse"></p>
+    </div>
+    <div class="yesno">
+        <button id = "yes">YES</button>
+        <button id = "no-higher">NO , mine is higher</button>
+        <button id = "no-lower">NO , mine is lower</button>
+    </div>
+    <style>
+        *{
+            padding : 0px;
+            margin : 0px;
+            box-sizing: border-box;
+            font-family: 'inter',sans-serif;
+            letter-spacing: -1px;
+        }
+        body{
+            min-height: 100vh;
+            display : flex;
+            flex-direction : column;
+            justify-content : center;
+            align-items : center;
+            text-align : center;
+            background : linear-gradient(#FFC233,#FFF4DB);
+            gap : 70px;
+        }
+        .header{
+            color: white;
+            font-size : 500%;
+            font-weight : 900;
+            letter-spacing : -4px;
+        }
+        #PcResponse{
+            color :#FFC233;
+            font-weight : 800;
+            font-size : 200%;
+        }
+        .yesno{
+            display : flex;
+            justify-content: center;
+            align-items: center;
+            gap : 100px;
+        }
+        button{
+            outline : none;
+            border : none;
+            padding : 10px 30px;
+            font-size : 200%;
+            color : white;
+            font-weight: 800;
+            letter-spacing: -2px;
+            border-radius: 6000px;
+        }
+        button:hover{
+            cursor : pointer;
+        }
+        #no-higher , #no-lower{
+            background-color: red;
+        }
+        #yes{
+            background-color: greenyellow;
+        }
+    </style>
+    <script src = "random_game_se2.js"></script>
+</body>
+</html>
